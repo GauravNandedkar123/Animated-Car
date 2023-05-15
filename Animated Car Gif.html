@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .car {
+      position: absolute;
+      top: 50%;
+      left: -100px;
+      width: 100px;
+      height: 50px;
+      background-color: #FF5722;
+      border-radius: 5px;
+      animation: car-move 5s linear infinite;
+    }
+    
+    @keyframes car-move {
+      0% {
+        left: -100px;
+      }
+      100% {
+        left: calc(100% + 100px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="car"></div>
+</body>
+</html>
